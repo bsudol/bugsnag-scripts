@@ -1,2 +1,2 @@
-# bugsnag-scripts
-Scripts to interact with Bugsnag API
+# Busgnag Scripts
+Various scripts to interact with Bugsnag API
