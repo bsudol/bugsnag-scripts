@@ -13,7 +13,7 @@ config.addOnSendError { (event) -> Bool in
                 }
             }
         }
-    
+    // return false to stop error from being posted
     return true
 }
 
