@@ -49,7 +49,7 @@ if @project_id
 		end	
 	end
 
-	if errors_response.length() > 0
+	if errors_to_update.length() > 0
 
 		@update_errors_url = "https://api.bugsnag.com/projects/#{@project_id}/errors"
 
