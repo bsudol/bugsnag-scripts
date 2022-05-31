@@ -4,11 +4,11 @@ Serving as an example for several implentation/configuration/workflow options
 
 Requirements: Bugsnag SDK installed and configured with API key to active account; API key associated with an Organization Administrator on the account
 
-##Languages:
+## Languages:
 - Ruby
 - Swift
 
-##Table of Contents:
+## Table of Contents:
 1. Scripts to interact with Data Access API: https://bugsnagapiv2.docs.apiary.io/#
   auto_snooze_small_errors: Snooze all errors with fewer than x events via API - for larger organizations looking to remove high volumes of small errors
   set_user_roles: Set all non-admin collaborators to the project_member role - for organizations transitioning to Enterprise looking to use new role
