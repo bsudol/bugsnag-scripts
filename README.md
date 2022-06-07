@@ -18,3 +18,4 @@ Requirements: Bugsnag SDK installed and configured with API key to active accoun
 * _network_breadcrumbs_to_metadata:_ Set last request information such as response status, duration and service as metadata so it can be searched on in dashboard.
 * _oom_update_context_via_breadcrumbs:_ For OOM exceptions, leverage information collected during runtime to add and track what view the OOM occurred in.
 * _pop_top_stack:_ Remove top line of stackframe before sending exception to Bugsnag, such that any error handler or other irrelevant classes are removed.
+* _add_device_tier_metadata_via_mapping:_ Add metadata flagging device tier, based on an internal. maintained mapping of device model to low/medium/high classification. Includes a sample mapping and sample class that reads the mapping in and passes the appropriate tier to the callback function.
