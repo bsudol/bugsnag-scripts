@@ -4,9 +4,10 @@ Serving as an example for several implentation/configuration/workflow options
 
 Requirements: Bugsnag SDK installed and configured with API key to active account; API key associated with an Organization Administrator on the account
 
-## Languages:
+## Frameworks:
 - Ruby
-- Swift
+- iOS (Swift)
+- Android (Java, Kotlin)
 
 ## Table of Contents:
 1. Scripts to interact with Data Access API: https://bugsnagapiv2.docs.apiary.io/#
