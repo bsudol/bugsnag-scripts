@@ -4,11 +4,20 @@
 
 config.addOnError(OnErrorCallback { event ->
 
-    var method = event.errors[0].stacktrace[0].method
-    if ("com.example.foo.module" in method!!) {
+    // Get first in project stackframe's method
+    var method = ""
+    for (frame in event.errors[0].stacktrace) {
+        if (frame.inProject == true) {
+            method = frame.method.toString()
+            break
+        }
+    }
+
+    // Set team name metadata accordingly
+    if ("com.example.foo.module" in method) {
         event.addMetadata("team", "name", "foo_team")
     }
-    else if ("com.example.bar.module" in method!!) {
+    else if ("com.example.bar.module" in method) {
         event.addMetadata("team", "name", "bar_team")
     }
 
