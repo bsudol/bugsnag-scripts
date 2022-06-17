@@ -24,3 +24,4 @@ Requirements: Bugsnag SDK installed and configured with API key to active accoun
 * _get_module_set_team:_ Checks top stack method to pull module that error occurred in, then implements some logic to add metadata with responsible team name for each module, so that searching/filtering based on team name is easier in dashboard.
 * _parse_request_params_metadata:_ Separate out request params metadata (hash) collected by default in Rails projects into individual key value pairs in metadata strucutre so that each individual param (e.g. uuid, action, etc) can be individually indexed and searched on in the dashboard.
 * _redux_state_as_metadata:_ Adds redux state information to a new tab of metadata in an on error callback function for JS projects
+* _set_error_to_handled:_ Sets error of a specific type to type "handled" - such that all errors of this type do not contribute to application's stability score metric.
