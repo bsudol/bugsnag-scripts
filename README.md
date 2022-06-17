@@ -22,4 +22,4 @@ Requirements: Bugsnag SDK installed and configured with API key to active accoun
 * _add_device_tier_metadata_via_mapping:_ Add metadata flagging device tier, based on an internal. maintained mapping of device model to low/medium/high classification. Includes a sample mapping and sample class that reads the mapping in and passes the appropriate tier to the callback function.
 * _get_module_set_team:_ Checks top stack method to pull module that error occurred in, then implements some logic to add metadata with responsible team name for each module, so that searching/filtering based on team name is easier in dashboard.
 * _parse_request_params_metadata:_ Separate out request params metadata (hash) collected by default in Rails projects into individual key value pairs in metadata strucutre so that each individual param (e.g. uuid, action, etc) can be individually indexed and searched on in the dashboard.
-*_redux_state_as_metadata:_ Adds redux state information to a new tab of metadata in an on error callback function for JS projects
+* _redux_state_as_metadata:_ Adds redux state information to a new tab of metadata in an on error callback function for JS projects
