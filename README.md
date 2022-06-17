@@ -8,6 +8,7 @@ Requirements: Bugsnag SDK installed and configured with API key to active accoun
 - Ruby
 - iOS (Swift)
 - Android (Java, Kotlin)
+- Web (JS)
 
 ## Table of Contents:
 1. Scripts to interact with Data Access API: https://bugsnagapiv2.docs.apiary.io/#
